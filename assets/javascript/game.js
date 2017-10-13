@@ -1,15 +1,4 @@
- $(document).ready(function() {
-
-//accept user click to choose player and start game
-//move oppenent(s) to their area
-//define characters and their attributes as objects
-//onClick of attack button, adjust health
-	//handle when player is defeated
-	//handle when an opponent is defeated
-	//handle when all opponents defeated
-//reset game
-//make it all look half decent
-var tyler = {
+ var tyler = {
 	hp:150,
 	isUser:false,
 	name:"tyler",
@@ -50,18 +39,54 @@ var currentOpponent;
 var attackPower = 8;
 
 
+
+
+ $(document).ready(function() {
+
+//accept user click to choose player and start game
+//move oppenent(s) to their area
+//define characters and their attributes as objects
+//onClick of attack button, adjust health
+	//handle when player is defeated
+	//handle when an opponent is defeated
+	//handle when all opponents defeated
+//reset game
+//make it all look half decent
+
+
 $(".box").on("click",function(){
 	if(gameStatus=="selectPlayer"){
-		$(this).appendTo("#currentOpponentArea");
-		window.currentPlayer = allPlayers[this.value];
-		gameStatus = "selectDefender";
+		console.log($(this)[0].attributes[4].value);
+		// console.log($(this).attributes[4].value);
+		startGame($(this));
+		moveTheBox($(this),"attacker");
+		$(this).removeClass("start").addClass("attack");
 
+		currentPlayer = allPlayers[this.value];
+		gameStatus = "selectDefender";
+	}
+	else if (gameStatus == "selectDefender") {
+		moveTheBox($(this),"defender");
+		$(this).removeClass("start").addClass("defend");
+		currentOpponent = allPlayers[this.value];
+		gameStatus = "readyForAttack";
 	}
 
-})
+});
 console.log(gameStatus);
 
+//pass in the box and the area its moving to
+var moveTheBox = function(box,area){
+	
+	box.appendTo("#"+ area);
+	//set new class, remove clas?
 
+}
+
+var startGame = function(attacker){
+
+
+}
 
 function attack(){
 
@@ -87,18 +112,5 @@ function removePlayer(){
 
 }
 
-function selectUserPlayer(){
-	$(this).appendTo("#currentOpponentArea");
-	window.currentPlayer = allPlayers[this.value];
 
-}
-
-function selectDefender() {
-
-}
-
-
-
-
-
- })
+ });

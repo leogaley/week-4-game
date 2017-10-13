@@ -1,13 +1,51 @@
 .box {
-	border:2px solid black;
 	float:left;
-	width:25%;
-	background-color:white;
+	width:15%;
+	margin:10px;
+    padding:10px;
+    
+
 
 }
 
-#playerArea{
-	margin-top:10%;
+
+.rpg-column {
+    padding:5px;
+    
+}
+
+
+
+.start {
+    border:2px solid black;
+    background-color:#f3f7bf;
+
+}
+
+.wait {
+    border:2px solid gray;
+    background-color:#f3f7bf;
+}
+
+
+.attack {
+    border:2px solid green;
+    background-color:#70c2be;
+
+}
+
+.defend {
+    border:2px solid red;
+    background-color:#d70047;
+
+}
+
+.rpg-column {
+    background-color: #5ee0b4;
+}
+
+#first-row{
+	margin-top:5%;
 }
 
 body, html {
@@ -22,7 +60,23 @@ body, html {
     height: 100%; 
 
     /* Center and scale the image nicely */
-    background-position: center;
+    background-position-y: top;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*#tyler-box{
+    background-image: url(../images/tyler.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+    width:120px;
+    height:150px;
+
+}*/
+
+#tyler-image, #bob-image, #marla-image, #edward-image {
+    width:100%;
+    height:auto;
+
 }
