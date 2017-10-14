@@ -72,6 +72,11 @@ var startGame = function(attackerId){
 
 //runs when user selects opponent
 var selectDefender = function(defenderId){
+	if(defenderId == currentPlayer.id){
+		$("#result").html("Can't fight yourself!");
+		return;
+	}
+
 	currentOpponent = allPlayers[defenderId];
 	gameStatus = "readyForAttack";
 	moveTheBox(defenderId,"defenderArea");

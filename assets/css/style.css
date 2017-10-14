@@ -1,18 +1,17 @@
 .box {
 	float:left;
-	width:12%;
-	margin:10px;
-    padding:10px;
+	width:30%;
+	margin:5px;
+    padding:5px;
 }
 
 #game-header{
     color:#d70047;
     font-weight:600;
-    font-size:35px;
 }
 
 .rpg-column {
-    padding:5px;
+    padding:3px;
     
 }
 
@@ -20,18 +19,13 @@
 #startArea a {
     border:2px solid black;
     background-color:#f3f7bf;
+    max-width: 75px;
 
 }
 
 #waitingArea a {
     border:2px solid gray;
     background-color:#f3f7bf;
-}
-
-#header-block {
-    margin-left:50px;
-    margin-top:50px;
-    float:left;
 }
 
 
@@ -51,9 +45,17 @@
     background-color: #5ee0b4;
 }
 
-#first-row{
-	margin-top:5%;
+.header {
+    display:inline-block;
+    float:left;
+    margin-left:100px;
 }
+
+
+
+/*#first-row{
+	margin-top:5%;
+}*/
 
 body, html {
     height: 100%;

@@ -17,27 +17,30 @@
 </head>
 <body>
 	<div class="bg container-fluid">
+
+		<div class="header rpg-column well col-xs-3 col-xs-offset-1">
+			<div class="well-header text-center" id="game-header">
+				FIGHT CLUB: THE RPG
+			</div>
+			<div class="well-body hidden" id="rules">
+				<ol>
+					<li>You do not talk about fight club RPG.</li>
+					<li>You DO NOT talk about fight club RPG.</li>
+					<li>If someone yells stop, goes limp, or taps out, the fight is over.</li>
+					<li>Only two guys to a fight.</li>
+					<li>One fight at a time.</li>
+					<li>The fights are bare knuckle. No shirt, no shoes, no weapons.</li>
+					<li>Fights will go on as long as they have to.</li>
+					<li>If this is your first time playing Fight Club RPG, you have to play.</li>
+				</ol>
+			</div>
+		</div>
+
 		<div class="row" id="first-row">
 
-			<div class="rpg-column well col-xs-offset-1 col-xs-3">
-				<div class="well-header text-center" id="game-header">
-					FIGHT CLUB: THE RPG
-				</div>
-				<div class="well-body hidden" id="rules">
-					<ol>
-						<li>You do not talk about fight club RPG.</li>
-						<li>You DO NOT talk about fight club RPG.</li>
-						<li>If someone yells stop, goes limp, or taps out, the fight is over.</li>
-						<li>Only two guys to a fight.</li>
-						<li>One fight at a time.</li>
-						<li>The fights are bare knuckle. No shirt, no shoes, no weapons.</li>
-						<li>Fights will go on as long as they have to.</li>
-						<li>If this is your first time playing Fight Club RPG, you have to play.</li>
-					</ol>
-				</div>
-			</div>
+			
 
-			<div class="rpg-column well col-xs-5 col-xs-offset-2" id="startArea">
+			<div class="rpg-column well col-xs-6 col-xs-offset-5" id="startArea">
 
 				<div class="well-header" id="topMessage">
 					CHOOSE A PLAYER TO START THE GAME
@@ -108,23 +111,28 @@
 		</div>
 
 		<div class="row" >
-			<div class="rpg-column well col-xs-5 col-xs-offset-6" id="attackerArea">
+			<div class="rpg-column well col-xs-3 col-xs-offset-5" id="attackerArea">
 				<div class="well-header" id="attackerMessage">
 					YOUR PLAYER
 				</div>
 			</div>
-		</div>
-
-		<div class="row">
-			<div class="rpg-column well col-xs-5 col-xs-offset-6" id="waitingArea">
+			<div class="rpg-column well col-xs-3" id="waitingArea">
 				<div class="well-header" id="waitingMessage">
 					ENEMIES TO FIGHT
 				</div>
 			</div>
 		</div>
 
+		<div class="row">
+			<!-- <div class="rpg-column well col-xs-5 col-xs-offset-6" id="waitingArea">
+				<div class="well-header" id="waitingMessage">
+					ENEMIES TO FIGHT
+				</div>
+			</div> -->
+		</div>
+
 		<div class="row hidden" id="attackRow">
-			<div class="rpg-column well col-xs-5 col-xs-offset-6" id="waitingArea">
+			<div class="rpg-column well col-xs-6 col-xs-offset-5" id="waitingArea">
 				<div class="well-header">
 					<button class="btn btn-large btn-danger" id="attackButton">
 						ATTACK					
@@ -136,7 +144,7 @@
 		</div>
 
 		<div class="row">
-			<div class="rpg-column well col-xs-5 col-xs-offset-6" id="defenderArea">
+			<div class="rpg-column well col-xs-3 col-xs-offset-5" id="defenderArea">
 				<div class="well-header" id="attackerMessage">
 					CURRENT ENEMY
 				</div>
